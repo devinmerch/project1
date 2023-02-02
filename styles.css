@@ -1,94 +1,125 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: 30% 1fr 30%;
-    grid-template-rows: 100px 1fr 100px;
-    height: 100vh;
-  }
-  
-  .area1, .area3 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  
-  .area5, .area6 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-    width: 15%;
-  }
-  
-  .area2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-  
-  .area8 {
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-  }
+body .grid-container {
+  display: grid;
+  grid-template-columns: 30% 15% 40% 15%;
+  grid-template-rows: 100px 2fr 2fr 100px;
+  grid-template-areas: 
+    "area1 area2 area2 area2"
+    "area3 area4 area4 area5"
+    "area3 area6 area7 area7"
+    "area3 area8 area8 area8";
+  height: 100vh;
+  margin: auto;
+}
 
-  .area4 {
-    overflow-y: auto;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid gray;
-  }
-  
-  tr:nth-child(odd) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #ddd;
-  }
+.area1 {
+  grid-area: area1;
+  background-color: #F0F8FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 1px;
+}
 
-  .area6 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  li {
-    list-style-type: none;
-    margin-bottom: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  a:hover {
-    color: gray;
-  }
+.area1 img {
+  min-width: 100px;
+  min-height: 100px;
+  object-fit: scale-down;
+  margin: 10px;
+}
 
-  .area7 {
-    padding: 10px;
-  }
+.area2 {
+  grid-area: area2;
+  background-color: #F0F8FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  border: solid black 1px;
+}
 
-  .area8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-  }
-  
-  .area8 a {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .area8 i {
-    font-size: 20px;
-  }
+.area3 {
+  grid-area: area3;
+  background-color: #F0F0F0;
+  border: solid black 1px;
+  padding: 10px;
+}
+
+.area4 {
+  grid-area: area4;
+  background-color: #F0F8FF;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: solid black 1px;
+}
+
+.area4 table {
+  grid-area: area4;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.area4 th, .area4 td {
+  border: solid black 1px;
+  padding: 10px;
+}
+
+.area4 tr:nth-child(odd) {
+  background-color: #F0F0F0;
+}
+
+.area4 tr:nth-child(even) {
+  background-color: #F0F8FF;
+}
+
+.area4 tr:hover {
+  background-color: #B0E0E6;
+}
+
+.area5 {
+  grid-area: area5;
+  background-color: #F0F8FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black 1px;
+}
+
+.area5 img {
+  min-width: 100px;
+  min-height: 300px;
+  object-fit: scale-down;
+}
+
+.area6 {
+  grid-area: area6;
+  background-color: #F0F8FF;
+  padding: 10px;
+  border: solid black 1px;
+}
+
+/* Area 7 */
+.area7 {
+  grid-area: area7;
+  background-color: #F0F8FF;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border: solid black 1px;
+}
+
+
+/* Area 8 */
+.area8 {
+  grid-area: area8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(163, 158, 158);
+  height: 100px;
+}
+
+
   
   
   
