@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>My Web Page</title>
 
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
+    <script src="mycode.ts"></script>
 
   </head>
   <body>
-    <script type="text/babel" src="mycode.ts" />
+    
     
     <div class="grid-container">
       <!-- Area 1 -->
@@ -34,8 +39,7 @@
       </div>  
 
       <!-- Area 4 -->
-      <div class="area4">
-      </div>
+      <div id="area4-table"></div>
 
       <!-- Area 5 -->
       <div class="area5">
@@ -43,24 +47,15 @@
       </div>
 
       <!-- Area 6 -->
-      <div class="area6">
-        <ul>
-          <li><a href="https://www.apple.com/" target="_blank">AAPL</a></li>
-          <li><a href="https://www.tesla.com/" target="_blank">TSLA</a></li>
-          <li><a href="https://www.microsoft.com/en-us/">MSFT</a></li>
-        </ul>
-      </div>
+      <div id="area6"></div>
       <!-- Area 7 -->
       <div class="area7">
         <p><b>This</b> is a sample <i>paragraph</i> of text in Area 7. This <code>paragraph</code> demonstrates the use of HTML elements styles.</p>
       </div>
       <!-- Area 8 -->
-      <div class="area8">
-        <img src="icons8-github-60.png" alt="GitHub">
-        <img src="icons8-twitter-60.png" alt="Twitter">        
-        <img src="icons8-linkedin-circled-60.png" alt="LinkedIn">
-        <img src="icons8-class-60.png" alt="BlackBoard">
-      </div>   
+      <div id="area8"></div>   
+
+      <script type="text/babel" src="mycode.ts" />
 </body>   
 
 </html>

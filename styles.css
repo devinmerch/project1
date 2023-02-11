@@ -44,35 +44,36 @@ body .grid-container {
   padding: 10px;
 }
 
-.area4 {
+#area4-table {
   grid-area: area4;
   background-color: #F0F8FF;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 10px;
   border: solid black 1px;
 }
 
-.area4 table {
+#area4-table table {
   grid-area: area4;
   width: 100%;
   border-collapse: collapse;
 }
 
-.area4 th, .area4 td {
+#area4-table th, #area4-table td {
   border: solid black 1px;
   padding: 10px;
 }
 
-.area4 tr:nth-child(odd) {
+#area4-table tr:nth-child(odd) {
   background-color: #F0F0F0;
 }
 
-.area4 tr:nth-child(even) {
+#area4-table tr:nth-child(even) {
   background-color: #F0F8FF;
 }
 
-.area4 tr:hover {
+#area4-table tr:hover {
   background-color: #B0E0E6;
 }
 
@@ -91,7 +92,7 @@ body .grid-container {
   object-fit: scale-down;
 }
 
-.area6 {
+#area6 {
   grid-area: area6;
   background-color: #F0F8FF;
   padding: 10px;
@@ -110,7 +111,7 @@ body .grid-container {
 
 
 /* Area 8 */
-.area8 {
+#area8 {
   grid-area: area8;
   display: flex;
   align-items: center;
